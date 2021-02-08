@@ -1,0 +1,494 @@
+body {
+  background-color: #303030;
+  font-family: 'Raleway', sans-serif;
+  background: no-repeat center right fixed url("images/beach-1852945_1920.jpg");
+  background-size: 100%;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: none;
+}
+
+.navbar a {
+  float: right;
+  font-size: 22px;
+  color: #fffbf1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Sacramento', cursive;
+}
+
+.home {
+  color: #6495ED;
+  float: right;
+  font-size: 22px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Sacramento', cursive;
+  display: inline;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: #fffbf1;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Sacramento', cursive;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #6495ED;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:  #6495ED;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  color: #303030;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.space {
+  padding: 300px;
+}
+
+
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+
+.hi {
+  color: #FE2C54;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 55px;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .hi {
+    font-size: 50px;
+  }
+}
+
+.hi:before,
+.hi:after {
+  content: '';
+  padding: 2em 1em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 2px solid #fffbf1;
+  border-radius: 5px;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.hi:before {
+  border-color: #FE2C54 #FE2C54 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.hi:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #FE2C54 #FE2C54;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .texta {
+    font-size: 13px;
+    height: 320px;
+    width: 350px;
+  }
+}
+
+* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .textb{
+    font-size: 13px;
+    height: 320px;
+    width: 350px;
+  }
+}
+
+
+.olfilm {
+  margin-left: 30%;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 992px) {
+  .olfilm {
+    height: 150px;
+    width: 300px;
+    margin-left: 15%;
+  }
+}
+
+.eu {
+border-radius: 50%;
+border: 2px solid #fffbf1;
+max-width: 100%;
+width: 150px;
+margin-top: 7%;
+margin-left: 10%;
+position: absolute;
+height:auto;
+}
+
+.description {
+background:#303030;
+border-radius: 10px;
+border: 1px solid #6495ED;
+color: #fffbf1;
+max-width: 60%;
+height:auto;
+margin-top: 15%;
+margin-left:13%;
+margin-bottom: 5%;
+opacity: 1;
+position: absolute;
+padding: 20px;
+line-height: 1.5;
+text-align: justify;
+z-index:-9999999;
+font-size: 16px;
+font-weight: normal;
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 992px) {
+  .description {
+    font-size: 13px;
+  }
+  .eu {
+    width:80px;
+    margin-top: 5%;
+  }
+}
+
+
+.spacey {
+padding:30px;
+position: relative;
+}
+
+        .containera{
+          width: 50%;
+          margin: 1% auto;
+          position: relative;
+          top: 500px;
+          left: 0%;
+          height: auto;
+        }
+        @keyframes load{
+          from {
+            width: 0%
+          }
+        }
+        @-webkit-keyframes load{
+          from {
+            width: 0%
+          }
+        }
+        @-moz-keyframes load{
+          from {
+            width: 0%
+          }
+        }
+        @-o-keyframes load{
+          from {
+            width: 0%
+          }
+        }
+
+        .bar{
+          background-color: #6495ED;
+          padding: 2px;
+          border-radius: 15px;
+          border: 1px solid #6495ED;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #fffbf1;
+          font-weight: bold;
+        }
+        .bar::before{
+          content:  attr(data-skill);
+          background-color: rgba(255.0, 251.0, 241.0, 0.7);
+          display: inline-block;
+          padding: 5px 0 5px 10px;
+          border-radius: inherit;
+          animation: load 2s 0s;
+          -webkit-animation: load 2s 0s;
+          -moz-animation: load 2s 0s;
+          -o-animation: load 2s 0s;
+        }
+
+        .bar.front::before{
+          background-color: #303030;
+        }
+        .bar.back::before{
+          background-color: #303030;
+        }
+
+        .bar.learning::before{
+          width: calc(20% - 10px);
+        }
+        .bar.basic::before{
+          width: calc(40% - 10px);
+        }
+        .bar.intermediate::before{
+          width: calc(50% - 10px);
+        }
+        .bar.advanced::before{
+          width: calc(80% - 10px);
+        }
+        .bar.expert::before{
+          width: calc(95% - 10px);
+        }
+h1 {
+  color:  #FE2C54;
+  font-size: 40px;
+  font-weight: normal;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  background-color: none;
+  border-radius: 20px;
+  }
+
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 992px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+
+.workexp {
+  width:193%;
+  font-size: 15px;
+  font-weight: normal;
+  color:  #fffbf1;
+  background-color: #303030;
+  border-radius: 20px;
+  padding: 20px;
+  left:-50%;
+  position: absolute;
+  line-height: 1.5;
+  text-align: justify;
+
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 992px) {
+  .workexp {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.job {
+  color:#6495ED;
+  font-size: 15px;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  height: 120px;
+  width: 50%;
+  color:#fffbf1;
+  border-radius: 20px;
+  border: 2px solid #6495ED;
+  font-size: 25px;
+  margin-top: 4%;
+  margin-left: 10%;
+  font-weight: normal;
+  text-align: left;
+  padding: 10px;
+  background:#303030;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ .overlayol{
+  position:absolute;
+  top:0px;
+  background:rgba(48, 48, 48, 0.9);
+  height:100%;
+  width:80%;
+  text-align:left;
+   width:0px;
+   overflow:hidden;
+   transition:all 0.4s ease;
+   color: #fffbf1;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 992px) {
+  .overlayol{
+    font-size: 12px;
+  }
+}
+
+.overlaycm{
+  position:absolute;
+  top:0px;
+  background:rgba(48, 48, 48, 0.9);
+  height:100%;
+  width:80%;
+  text-align:left;
+   width:0px;
+   overflow:hidden;
+   transition:all 0.4s ease;
+   color: #fffbf1;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+.gotocm {
+  text-decoration: none;
+  text-align: center;
+  color:#fffbf1;
+  padding:10px;
+  margin-left: 35%;
+  background-color: #6495ED;
+  border-radius: 10px;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 992px) {
+  .overlaycm{
+    font-size: 12px;
+  }
+}
+
+.overlayt{
+  position:absolute;
+  top:0px;
+  background:rgba(48, 48, 48, 0.9);
+  height:100%;
+  width:80%;
+  text-align:left;
+   width:0;
+   overflow:hidden;
+   transition:all 0.4s ease;
+   color: #fffbf1;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 992px) {
+  .overlayt{
+    font-size: 12px;
+  }
+}
+
+.ham-menu div{
+  width: 20px;
+  height: 4px;
+  margin-bottom: 4px;
+  background: #FE2C54;
+  border-radius: 4px;
+  margin-left: 50%;
+}
+.ham-menu{
+  cursor: pointer;
+}
+
+.space1 {
+  padding: 10%;
+}
+
+#radio1:checked ~ .overlayol{
+  width:100%;
+}
+
+#radiox:checked ~ .overlaycm{
+  width:100%;
+}
+
+#radioy:checked ~ .overlayt{
+  width:100%;
+}
+
+.cross{
+  font-size: 20px;
+  font-weight:bold;
+  float:right;
+  margin:50px 150px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  color: #fffbf1;
+}
+.cross:hover{
+  font-size:30px;
+  color:#FE2C54;
+}
+input[type="radio"]{
+  display:none;
+}
